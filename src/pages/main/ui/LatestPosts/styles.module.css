@@ -1,0 +1,47 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 2px solid #cdf2ee;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #b2d5d1;
+}
+
+.ontop {
+  position: sticky;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #3cafa4;
+  border-radius: 20px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  animation: floatAnimation 3s infinite alternate;
+}
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.hidden {
+  display: none;
+}

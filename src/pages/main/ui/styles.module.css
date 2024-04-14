@@ -1,0 +1,12 @@
+.main {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

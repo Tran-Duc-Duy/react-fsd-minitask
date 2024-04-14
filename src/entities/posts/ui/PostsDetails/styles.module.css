@@ -1,0 +1,35 @@
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.body {
+  font-size: 24px;
+}
+.links {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  width: 200px;
+}
+
+.links:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+  .description {
+    padding: 20px 0;
+  }
+}
